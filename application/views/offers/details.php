@@ -62,17 +62,25 @@
         <li><strong>Km:</strong>
           <?=$offers[0]->mileage;?>
         </li>
-        <li><strong>Placa:</strong>
-          <?=$offers[0]->plate;?>
+        <li><strong>Final da Placa:</strong>
+          <?=plate($offers[0]->plate);?>
         </li>
-        <li><strong>Financiamento:</strong>
-          <?=$offers[0]->is_funding;?>
+		
+		<li>
+			<strong>Financiamento:</strong>
+			<? if($offers[0]->is_funding){ ?>
+				<span>Sim</span>
+			<? } else { ?>
+				<span>Não</span>
+			<? } ?>
         </li>
+
+		<li>&nbsp;</li>
       </ul>
     </div>
     <div style="clear:both;"></div>
-    <div class="offer_price">R$
-      <?=number_format($offers[0]->price,2);?>
+    <div class="offer_price">
+      <?=price($offers[0]->price);?>
     </div>
   </div>
   <div style="clear:both;"></div>

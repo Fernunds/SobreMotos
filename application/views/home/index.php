@@ -14,8 +14,8 @@
       /
       <?=$offer->state?>
       <br />
-      </a> <span class="price">R$
-      <?=number_format($offer->price,2)?>
+      </a> <span class="price">
+      <?=price($offer->price)?>
       </span> </div>
     <?php } ?>
     <div style="clear:both;"></div>
