@@ -51,4 +51,23 @@ class User_model extends CI_model{
 		
 		return true;
 	}
+	
+	function byalias($alias)
+	{
+		$this->db->select('*');
+		$this->db->from($this->tablename);
+		$this->db->where('alias', $alias);
+		$this->db->order_by('name', 'ASC');
+		
+		$query = $this->db->get();
+		$data  = array();
+		
+		if($query->num_rows() > 0){
+			foreach ($query->result() as $row){
+				array_push($data, $row);
+			}
+		}
+		
+		return $data;
+	}
 }

@@ -43,6 +43,7 @@ $route['404_override'] = '';
 
 $route['entrar'] = 'users/login';
 $route['sair'] = 'users/logoff';
+$route['perfil/(:any)'] = 'users/profile/$1';
 
 $route['produto/(:any)'] = 'offers/details/$1';
 

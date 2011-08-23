@@ -1,4 +1,4 @@
-<h1>Perfil de <?php print($user->name);?></h1>
+<h1>Perfil de <?php print($user[0]->name);?></h1>
 
 <?php var_dump($telephones);?>
 
