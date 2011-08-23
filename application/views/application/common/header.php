@@ -50,7 +50,11 @@
 				<a href="<?=$root;?>" title="SobreMotos Classificados">SobreMotos Classificados</a>
 			</h1>
 			
-			<p>Bem-vindo! <a href="<?=$root;?>entrar" title-"Entrar">Entre</a> ou <a href="<?=$root;?>cadastro" title-"">cadastre-se</a>.</p>
+			<? if(@$this->session->userdata['logged']){ ?>
+				<p>Bem-vindo <?=$this->session->userdata['user']->name?>, acesse o painel de controle de sua conta!</p>
+			<? } else { ?>
+				<p>Bem-vindo! <a href="<?=$root;?>entrar" title-"Entrar">Entre</a> ou <a href="<?=$root;?>cadastro" title-"">cadastre-se</a>.</p>
+			<? } ?>
 			
 			<div id="formBusca">							
 				<form>

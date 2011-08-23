@@ -32,9 +32,11 @@ class User_model extends CI_model{
 		$query = $this->db->get();
 		
 		if($query->num_rows > 0){
+			$result = $query->result();
+			
 			$this->session->set_userdata(array(
-				'logged' => true,
-				$query->result()
+				'logged'	=> true,
+				'user'		=> $result[0]
 			));
 			
 			return true;

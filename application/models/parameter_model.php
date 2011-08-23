@@ -15,7 +15,7 @@ class Parameter_model extends CI_model{
 		$this->db->select('*');
 		$this->db->from($this->tablename);
 		$this->db->where('status_id', 1);
-		$this->db->order_by('name', 'ASC');
+		$this->db->order_by('parameter', 'ASC');
 		
 		$query = $this->db->get();
 		$data  = array();
