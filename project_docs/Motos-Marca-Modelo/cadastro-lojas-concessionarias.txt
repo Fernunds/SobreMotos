@@ -1,0 +1,94 @@
+Campos: LOJA E CONCESSIONARIA
+
+*CNPJ    04.701.148/0001-04 
+*Razão social
+*Nome fantasia
+*Data inauguração    dd/mm/aaaa 
+*Seu negócio é __________
+
+[ ] Loja   [  ] Concessionária
+
+
+Endereço da sua revenda
+
+*Endereço
+    Ex: Avenida Rui Barbosa, 1380
+    (sem ponto e sem abreviações)
+
+Complemento
+    Ex: loja 13B, box 13/14
+
+*Bairro
+*CEP
+*Cidade
+*Estado
+
+Responsável legal
+
+*Nome completo
+*Email
+*CPF
+
+Contato Principal
+
+*Nome completo
+*Email
+
+
+Telefones da revenda
+
+*Fixo 1
+Fixo 2
+Celular 1
+Celular 2
+ID rádio
+Operadora de rádio
+
+Site na internet
+
+Já possui um site de sua loja? Preencha se tiver.
+
+Site
+    (se houver) 
+
+
+______________
+Apresentação da sua revenda nos anúncios
+(CAMPO PARA 300 Caracteres)
+
+
+[  ] Quero que o mapa da loja apareça no detalhe dos anúncios - RECOMENDADO
+
+
+Especificações de formato mini-banner
+
+(CAMPO PARA FAZER UPLOAD)
+A imagem deve ter tamanho 100x40 px 
+(100 pixels de largura por 40 pixels de altura), formato GIF e peso 1,5 Kb
+
+----------------------------------------------------------------------------
+DADOS DE COBRANÇA (SOMENTE BOLETO)
+
+*Endereço
+    Ex: Avenida Rui Barbosa, 1380
+    (sem ponto e sem abreviações)
+
+Complemento
+    Ex: loja 13B, box 13/14
+
+*Bairro
+*CEP
+*Cidade
+*Estado
+
+Responsável 
+*Nome completo
+*Email
+*Telefone Fixo
+
+[  ] li e aceito os termos de uso 
+[  ] Quero receber novidades
+
+
+
+

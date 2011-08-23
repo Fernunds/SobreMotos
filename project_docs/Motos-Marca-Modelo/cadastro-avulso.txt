@@ -1,0 +1,34 @@
+Campos: PESSOA FÍSICA
+
+Contato Principal
+
+*Nome completo
+*Email
+*CPF
+*RG
+
+*Endereço
+    Ex: Avenida Rui Barbosa, 1380
+    (sem ponto e sem abreviações)
+
+Complemento
+    Ex: loja 13B, box 13/14
+
+*Bairro
+*CEP
+*Cidade
+*Estado
+
+Telefones da revenda
+
+*Fixo 1
+Fixo 2
+Celular 1
+Celular 2
+ID rádio
+Operadora de rádio
+
+
+[  ] Quero que o mapa da minha residencia apareça no detalhe do anúncio - RECOMENDADO
+[  ] li e aceito os termos de uso 
+[  ] Quero receber novidades

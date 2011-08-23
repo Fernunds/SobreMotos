@@ -1,0 +1,41 @@
+Modalidades
+-- Usuário Pessoa Física --
+
+ATÉ VENDER
+Baixa prioridade na exibição da busca
+8 fotos
+
+Valor: Gratis
+
+
+-- Usuário Pessoa Jurídica --
+
+REVENDA I
+20 Motos
+08 Fotos por Moto
+Relatório de Estatística on-line
+Anúncios ATÉ VENDER
+
+Valor: R$ 29,00/mês
+
+REVENDA II
+30 Motos
+08 Fotos por Moto
+Relatório de Estatística on-line
+Anúncios ATÉ VENDER
+Mini Banner no resultado da Busca
+
+Valor: R$ 49,00/mês
+
+REVENDA III
+60 Motos
+08 Fotos por Moto
+Relatório de Estatística on-line
+Anúncios ATÉ VENDER
+Mini Banner no resultado da Busca
+Oferta em Destaque
+Destaque do logotipo da loja como nossa Revenda VIP
+
+Valor: R$ 79,00/mês
+
+Obs.: Pagamento apenas por Boleto

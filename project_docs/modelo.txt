@@ -1,0 +1,168 @@
+state
+	id
+	name
+	short_name
+	updated_in
+	status_id
+	
+city
+	id
+	state_id
+	name
+	updated_in
+	created_in
+
+type
+	id
+	category_id
+	name
+	description
+	updated_in
+	status_id
+
+user
+	id
+	name
+	alias
+	email
+	password
+	is_admin
+	is_company
+	updated_in
+	status_id
+
+telephone
+	id
+	user_id
+	type_id
+	prefix
+	telephone
+	updated_in
+	status_id
+	
+address
+	id
+	user_id
+	type_id
+	street
+	number
+	complement
+	neighborhood
+	state_id
+	city_id
+	zipcode
+	updated_in
+	status_id
+	
+plan
+	id
+	name
+	description
+	monthly_price
+	is_free
+	images
+	updated_in
+	status_id
+	
+purchase
+	id
+	user_id
+	plan_id
+	is_recurrent
+	creation_date
+	updated_in
+	status_id
+	
+brand
+	id
+	name
+	website
+	updated_in
+	status_id
+	
+model
+	id
+	brand_id
+	name
+	updated_in
+	status_id
+	
+fuel
+	id
+	name
+	updated_in
+	status_id
+	
+exchange
+	id
+	name
+	updated_in
+	status_id
+	
+color
+	id
+	name
+	website
+	updated_in
+	status_id
+	
+origin
+	id
+	name
+	description
+	updated_in
+	status_id
+	
+vehicle
+	id
+	user_id
+	origin_id
+	model_id
+	fuel_id
+	exchange_id
+	color_id
+	state_id
+	city_id
+	title
+	description
+	consideration
+	slug
+	factory_year
+	model_year
+	mileage
+	plate_end
+	price
+	is_funding
+	updated_in
+	status_id
+
+tag
+	id
+	name
+	count
+	updated_in
+	status_id
+	
+vehicle_tag
+	id
+	vehicle_id
+	tg_id
+	updated_in
+	status_id
+	
+image
+	id
+	vehicle_id
+	image_path
+	updated_in
+	status_id
+	
+proposal
+	id
+	vehicle_id
+	name
+	subject
+	message
+	updated_in
+	status_id
+	
