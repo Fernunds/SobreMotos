@@ -20,7 +20,7 @@
     <h3>Vendedor</h3>
     <div id="offer_details">
       <ul>
-        <li style="width:538px;"> <strong>Nome:</strong>&nbsp; <a href="<?=$root?>usuario/<?=$offers[0]->alias?>">
+        <li style="width:538px;"> <strong>Nome:</strong>&nbsp; <a href="<?=$root?>perfil/<?=$offers[0]->alias?>">
           <?=$offers[0]->user_name?>
           </a> </li>
         <li style="width:538px;"> <strong>Telefone:</strong> <a href="javascript:telephone('<?=$offers[0]->alias?>');" title="Ver Telefone">Ver Telefone</a> </li>
@@ -63,7 +63,7 @@
           <?=$offers[0]->mileage;?>
         </li>
         <li><strong>Placa:</strong>
-          <?=$offers[0]->plate_end;?>
+          <?=$offers[0]->plate;?>
         </li>
         <li><strong>Financiamento:</strong>
           <?=$offers[0]->is_funding;?>

@@ -44,5 +44,7 @@ $route['404_override'] = '';
 $route['entrar'] = 'users/login';
 $route['sair'] = 'users/logoff';
 
+$route['produto/(:any)'] = 'offers/details/$1';
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

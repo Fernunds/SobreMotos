@@ -19,15 +19,20 @@ class Offer_model extends CI_model{
 			color.name as color,
 			state.name as state,
 			city.name as city,
+			origin.name as origin,
 			offer.title,
 			offer.slug,
 			offer.description,
+			offer.consideration,
 			offer.factory_year,
 			offer.model_year,
 			offer.mileage,
 			offer.plate,
 			offer.price,
-			offer.is_funding';
+			offer.is_funding,
+			user.id,
+			user.name as user_name,
+			user.alias';
 			
 		$this->queryjoins = array(
 			array('brand', 'brand.id=offer.brand_id'),
@@ -36,7 +41,9 @@ class Offer_model extends CI_model{
 			array('exchange', 'exchange.id=offer.exchange_id'),
 			array('color', 'color.id=offer.color_id'),
 			array('state', 'state.id=offer.state_id'),
-			array('city', 'city.id=offer.city_id')
+			array('city', 'city.id=offer.city_id'),
+			array('origin', 'origin.id=offer.origin_id'),
+			array('user', 'user.id=offer.user_id')
 		);
 	}
 	
@@ -95,6 +102,7 @@ class Offer_model extends CI_model{
 		
 		$this->db->where('offer.status_id', 1);
 		$this->db->where('offer.slug', $slug);
+		$this->db->limit(1);
 		
 		$query = $this->db->get();
 		$data  = array();
