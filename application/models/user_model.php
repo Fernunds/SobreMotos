@@ -1,4 +1,5 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 class User_model extends CI_model{
 	
 	private $tablename;
@@ -47,10 +48,5 @@ class User_model extends CI_model{
 		$this->session->unset_userdata('logged');
 		
 		return true;
-	}
-	
-	function register($data)
-	{
-		
 	}
 }
