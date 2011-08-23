@@ -7,16 +7,12 @@
 			<ol>
 				<li>
 					<label for="brand_id">Marca:</label>
-					<select name="brand_id" id="brands" class="formHome">
-						<option value="0" selected="selected"></option>
-					</select>
+					<select name="brand_id" id="brand_id" class="formHome"></select>
 				</li>
 				
 				<li>
 					<label for="model_id">Modelo:</label>
-					<select name="model_id" id="model_id" class="formHome">
-						<option value="0" selected="selected"></option>
-					</select>
+					<select name="model_id" id="model_id" class="formHome"></select>
 				</li>
 				
 				<li>

@@ -22,7 +22,7 @@ class Parameter_model extends CI_model{
 		
 		if($query->num_rows() > 0){
 			foreach ($query->result() as $row){
-				array_push($data, $row);
+				$data[$row->parameter] = $row->value;
 			}
 		}
 		

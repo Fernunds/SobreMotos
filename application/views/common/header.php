@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-	<title><?php print($page_title);?></title>
+	<title><?=$params['system_title']?></title>
 	
 	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/stylesheets/application/stylesheet.css"/>
 	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/stylesheets/jqueryui/ui-darkness/jquery-ui-1.8.14.custom.css"/>
@@ -27,8 +27,13 @@
 			showInfo:false
 		});
 		
-		$.get('ajax/brands', function(data) {$('#brands').html(data);});
-		$.get('ajax/states', function(data) {$('#states').html(data);});
+		$.get('ajax/brands', function(data) {
+			$('#brand_id').html(data);
+		});
+		
+		$.get('ajax/states', function(data) {
+			$('#state_id').html(data);
+		});
 		
 		$("#brand_id").change(function(){
 			var url = 'ajax/models/' + this.value;

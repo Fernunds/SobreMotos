@@ -11,7 +11,7 @@ class Users extends CI_Controller {
 	public function login()
 	{
 		if(!$_POST){
-			$this->load->view('application/users/login');
+			$this->load->view('users/login');
 		} else {
 			if($this->user_model->login($_POST['email'], $_POST['password'])){
 				redirect('/');
