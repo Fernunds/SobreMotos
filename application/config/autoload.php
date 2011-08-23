@@ -110,6 +110,20 @@ $autoload['language'] = array();
 */
 
 $autoload['model'] = array(
+	'brand_model',
+	'city_model',
+	'color_model',
+	'exchange_model',
+	'fuel_model',
+	'model_model',
+	'offer_model',
+	'origin_model',
+	'parameter_model',
+	'plan_model',
+	'proposal_model',
+	'purchase_model',
+	'state_model',
+	'tag_model',
 	'user_model'
 );
 
