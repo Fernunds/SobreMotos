@@ -10,6 +10,10 @@ class Users extends CI_Controller {
 	
 	public function login()
 	{
+		if(@$this->session->userdata['logged']){
+			redirect('/');
+		}
+		
 		if(!$_POST){
 			$data['root']	= site_url();
 			$data['params'] = $this->parameter_model->all();
