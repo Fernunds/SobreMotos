@@ -117,11 +117,11 @@ $autoload['model'] = array(
 	'fuel_model',
 	'model_model',
 	'offer_model',
+	'order_model',
 	'origin_model',
 	'parameter_model',
 	'plan_model',
 	'proposal_model',
-	'purchase_model',
 	'state_model',
 	'tag_model',
 	'user_model'
