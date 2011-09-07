@@ -41,4 +41,9 @@ class Ajax extends CI_Controller {
 			print('<option value="'.$row->id.'">'.$row->name.'</option>');
 		}
 	}
+	
+	function telephone($id)
+	{
+		
+	}
 }

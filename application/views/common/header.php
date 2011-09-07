@@ -5,12 +5,13 @@
 	<title><?=$params['system_title']?></title>
 	
 	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/stylesheets/application/stylesheet.css"/>
-	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/stylesheets/jqueryui/ui-darkness/jquery-ui-1.8.14.custom.css"/>
+	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/stylesheets/jqueryui/blitzer/jquery-ui-1.8.14.custom.css"/>
 	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/javascripts/galleria/themes/classic/galleria.classic.css"/>
 	
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/jquery.js"></script>
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/jqueryui.js"></script>
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/galleria/galleria-1.2.4.js"></script>
+	<script type="text/javascript" src="<?=$root;?>resources/javascripts/funcoes.js"></script>
 	
 	<script type="text/javascript">
 	$(function(){
@@ -27,23 +28,10 @@
 			showInfo:false
 		});
 		
-		$.get('ajax/brands', function(data) {
-			$('#brand_id').html(data);
-		});
-		
-		$.get('ajax/states', function(data) {
-			$('#state_id').html(data);
-		});
-		
-		$("#brand_id").change(function(){
-			var url = 'ajax/models/' + this.value;
-			$.get(url, function(data) {$('#model_id').html(data);});
-		});
-		
-		$("#state_id").change(function(){
-			var url = 'ajax/cities/' + this.value;
-			$.get(url, function(data) {$('#city_id').html(data);});
-		});
+		$.get('ajax/brands', function(data){$('#brand_id').html(data);});
+		$.get('ajax/states', function(data){$('#state_id').html(data);});
+		$("#brand_id").change(function(){$.get('ajax/models/' + this.value, function(data) {$('#model_id').html(data);});});
+		$("#state_id").change(function(){$.get('ajax/cities/' + this.value, function(data) {$('#city_id').html(data);});});
 	});
 	</script>
 </head>

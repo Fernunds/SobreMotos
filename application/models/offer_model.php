@@ -30,7 +30,7 @@ class Offer_model extends CI_model{
 			offer.plate,
 			offer.price,
 			offer.is_funding,
-			user.id,
+			user.id as user_id,
 			user.name as user_name,
 			user.alias';
 			

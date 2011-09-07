@@ -1,6 +1,5 @@
 <div id="offer_detailsFull">
 <div id="breadcrumb"> <b>Bread Crumb Link</b> <img src="<?=$root?>resources/images/iconArrowBack.gif" /> <a href="#" title="Voltar ao Resultado da Busca" class="linkBreadcrumb">Voltar ao Resultado da Busca</a><span>&nbsp;|&nbsp;</span>
-
   <ul>
     <li><a href="" class="linkBreadcrumb" title="<?=$offers[0]->brand;?>">
       <?=$offers[0]->brand;?>
@@ -95,3 +94,27 @@
   </div>
   <br />
 
+<div id="user_telephone" class="dialog" title="Telefone do Vendedor">
+	<br />
+	<div>Contate o vendedor pelo telefone.</div>
+	
+	<br />
+	
+	<div style="float:left;">
+		<img src="<?=$root?>resources/images/telephone.png" border="0"/>
+	</div>
+	
+	<div style="font-size:24px;margin-top:20px;margin-left:150px;">
+		<ul>
+			<li><img src="<?=$root?>resources/images/telefone.gif" border="0"/> (11) 6082-4425</li>
+		</ul>
+	</div>
+	
+	<div style="font-size:11px;margin-top:20px;margin-left:150px;">
+	Onerfiwb erfwuerfgu ef werfguygw erfwrefg wyeurfguiyw gerfg wuergfu wgerfg wugre fuwgerifg wigerfugw.
+	wegrf wgrefugwerufg wegrf qwhf78134g h34fh qehfg84noqcy3drjqywo4r q ey8rgqow r81g34f8 g24fql ewfq we.
+	<br /><br />
+	
+	<b>Yaih fwigfug fuwefug usdfh fgysdf!</b>
+	</div>
+</div>
