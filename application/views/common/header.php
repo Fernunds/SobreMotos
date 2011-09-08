@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/jqueryui.js"></script>
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/galleria/galleria-1.2.4.js"></script>
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/funcoes.js"></script>
+	<script type="text/javascript" src="<?=$root;?>resources/javascripts/jquery.jcarousel.min.js"></script>
 	
 	<script type="text/javascript">
 	$(function(){
@@ -33,7 +34,24 @@
 		$("#brand_id").change(function(){$.get('ajax/models/' + this.value, function(data) {$('#model_id').html(data);});});
 		$("#state_id").change(function(){$.get('ajax/cities/' + this.value, function(data) {$('#city_id').html(data);});});
 	});
-	</script>
+	
+	jQuery(document).ready(function() {
+    	jQuery('#mycarousel').jcarousel({
+        	visible: 4
+    	});
+	});
+</script>
+    
+<style type="text/css">
+/** Overwrite for having a carousel with dynamic width. **/
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 580px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 100%;
+}
+</style>    
 </head>
 <body>
 	<div id="site">

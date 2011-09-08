@@ -25,10 +25,21 @@
   <br />
   <h3>Lojas ou Concessionárias</h3>
   <div id="boxGrupo">
-    <div id="setaNav-Esq"><a href=""></a></div>
-    <div> <a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a> <a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar-2.gif" alt="" width="100" height="60" /></a> <a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a> <a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar-2.gif" alt="" width="100" height="60" /></a> <a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a> </div>
-    <div id="setaNav-Dir"><a href=""></a></div>
-    <p><a href="">Ver mais</a></p>
+
+    <div id="wrap">
+      <ul id="mycarousel" class="jcarousel-skin-tango">
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a></li>
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar-2.gif" alt="" width="100" height="60" /></a></li>
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a></li>
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar-2.gif" alt="" width="100" height="60" /></a></li>
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a></li>
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar-2.gif" alt="" width="100" height="60" /></a></li>
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a></li>
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar-2.gif" alt="" width="100" height="60" /></a></li>
+        <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a></li>
+      </ul>
+    </div>
+    
   </div>
 </div>
 <div id="col3">
