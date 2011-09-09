@@ -8,7 +8,7 @@
 		  <div id="linkMap">
           	<div id="boxLinkMap">
         	  <!-- links do rodapé -->
-              <p><strong>Classificados</strong></p>
+              <!--<p><strong>Classificados</strong></p>-->
             </div>
           </div>
           <div id="copyright">

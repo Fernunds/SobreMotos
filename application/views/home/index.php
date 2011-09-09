@@ -30,6 +30,7 @@
 
   <h3>Anúncios mais Buscados</h3>
   <div id="boxGrupo">
+  
     <div id="wrap">
       <ul id="second-carousel" class="first-and-second-carousel jcarousel-skin-tango">
         <?php foreach($offers as $offer){?>
@@ -60,6 +61,7 @@
   <br />
   <h3>Lojas ou Concessionárias</h3>
   <div id="boxGrupo">
+  
     <div id="wrap">
       <ul id="carousel-avatar" class="jcarousel-skin-tango">
         <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar.gif" alt="" width="100" height="60" /></a></li>
@@ -74,7 +76,9 @@
         <li><a href="" title="" class="avatar"><img src="<?=$root?>uploads/avatar-2.gif" alt="" width="100" height="60" /></a></li>
       </ul>
     </div>
+    
   </div>
+  
 </div>
 <div id="col3">
 <hr />

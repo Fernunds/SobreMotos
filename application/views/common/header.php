@@ -49,6 +49,7 @@
 		jQuery('#second-carousel').jcarousel({
         	visible: 3
     	});
+	
 	});
 	
 	jQuery(document).ready(function() {
@@ -76,13 +77,14 @@
 			<h1>
 				<a href="<?=$root;?>" title="SobreMotos Classificados">SobreMotos Classificados</a>
 			</h1>
-			
+			<div id="logado">
 			<? if(@$this->session->userdata['logged']){ ?>
 				<p>Bem-vindo <?=$this->session->userdata['user']->name?>, acesse o painel de controle de sua conta!</p>
 			<? } else { ?>
 				<p>Bem-vindo! <a href="<?=$root;?>entrar" title-"Entrar">Entre</a> ou <a href="<?=$root;?>cadastro" title-"">cadastre-se</a>.</p>
 			<? } ?>
-			
+			</div>
+            <div style="clear:both;"></div>
 			<div id="formBusca">							
 				<form>
 					<fieldset>
