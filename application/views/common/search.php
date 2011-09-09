@@ -89,8 +89,16 @@
   </form>
   <hr />
   <br />
+  <h3>Anuncie sua Moto</h3>
+  <p><a href="" title="Anunciar" class="button buttonConfirm">Anunciar</a></p><br />
+  <a href="" title="">Loja ou Concessionária</a><br />
+  <a href="" title="">Quanto custa anunciar?</a>
+  <hr />
   <p><br />
     <span class="txtPublicidade">Publicidade<br />
     </span> <img src="resources/images/banner/gm250x250.jpg" alt="" width="250" height="250" /></p>
-  
+  <h3>Avalie seu veículo</h3>
+  <a href="" title="">Tabela Fipe</a><br />
+  <a href="" title="">Tabela Molicar</a>
+  <hr />  
 </div>
