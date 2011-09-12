@@ -73,7 +73,7 @@
 <body>
 	<div id="site">
 		<div id="top">
-          <div>
+          <div id="topfull">
 			<h1>
 				<a href="<?=$root;?>" title="SobreMotos Classificados">SobreMotos Classificados</a>
 			</h1>
@@ -84,7 +84,6 @@
 				<p>Bem-vindo! <a href="<?=$root;?>entrar" title-"Entrar">Entre</a> ou <a href="<?=$root;?>cadastro" title-"">cadastre-se</a>.</p>
 			<? } ?>
 			</div>
-            <div style="clear:both;"></div>
 			<div id="formBusca">							
 				<form>
 					<fieldset>

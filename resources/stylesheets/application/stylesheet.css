@@ -80,7 +80,7 @@ h4 {font-size: 18px; font-weight: normal;}
 
 /** COMEÇA HEADER ***/
 /** Formatação do bloco central **/
-#top div, #content, #boxLinkMap, #boxCopyright {
+#top #topfull, #content, #boxLinkMap, #boxCopyright {
 	margin: 0 auto !important;
 	min-width: 960px;
 	text-align: left;
@@ -107,23 +107,24 @@ h4 {font-size: 18px; font-weight: normal;}
 
 #top h1{
 	display:block;
-	width:300px;
+	width:250px;
 	float:left;
 }
 
 #top #logado{
 	display:block;
-	width:400px;
-	padding:60px 0 0 10px;
+	padding:40px 0 0 10px;
 }
 
 #top #formBusca{
-	background-color:#CCC;
 	display:block;
 	padding:5px;
+	float:left;
+	width:720px;
+/*	background-color:#F4F4F4;
 	border-radius: 4px 4px 4px 4px;
 	border-bottom: solid 1px #999;
-	border-right: solid 1px #999;
+	border-right: solid 1px #999; */
 }
 
 
@@ -235,7 +236,7 @@ h4 {font-size: 18px; font-weight: normal;}
 	text-align:right;
 	margin-right:3px;
 }
-#content #col1 .formHome {
+#content #col1 .Home {
 	width:170px;
 }
 

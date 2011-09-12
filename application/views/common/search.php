@@ -12,7 +12,7 @@
 				
 				<li>
 					<label for="model_id">Modelo:</label>
-					<select name="model_id" id="model_id" class="formHome"></select>
+					<select name="model_id" id="model_id" class="formHome" style="width:170px;"></select>
 				</li>
 				
 				<li>
