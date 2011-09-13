@@ -90,7 +90,7 @@ h4 {font-size: 18px; font-weight: normal;}
 /* Topo */
 #top {
 	clear: both;
-	height: 140px;
+	height: 96px;
 	background-image: url("../../images/bg_header.png");
 	background-repeat: repeat-x;
 	background-position: bottom;
@@ -105,22 +105,29 @@ h4 {font-size: 18px; font-weight: normal;}
 	padding:6px 6px 6px 25px;
 }
 
-#top h1{
+#top h1 a{
 	display:block;
 	width:250px;
+	height:57px;
 	float:left;
+	background:url("../../images/sobremotos.png");
+	text-indent:-9999px;
+	margin-top:20px;
 }
 
 #top #logado{
+	float:left;
 	display:block;
-	padding:40px 0 0 10px;
+	width:700px;
+	padding-top:20px;
+	margin-left:25px;
 }
 
 #top #formBusca{
 	display:block;
-	padding:5px;
+	padding:5px 5px 5px 25px;
 	float:left;
-	width:720px;
+	width:700px;
 /*	background-color:#F4F4F4;
 	border-radius: 4px 4px 4px 4px;
 	border-bottom: solid 1px #999;
