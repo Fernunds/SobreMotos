@@ -4,7 +4,7 @@
 	<ul id="breadcrumbs">
 	<?php foreach($filters as $filter){?>
 		<li>
-			<img src="<?=$root?>resources/images/bread_close.png" width="12" height="12"/>
+			<img src="<?=$root?>resources/images/bread_close.png" width="16" height="16"/>
 			<?=$filter?>
 		</li>
 	<?php } ?>
