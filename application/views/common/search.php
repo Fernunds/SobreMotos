@@ -1,6 +1,6 @@
 <div id="col1">	
 	<h3>Compre sua Moto</h3>
-	<form method="get" action="<?=$root?>buscar">
+	<form method="POST" action="<?=$root?>buscar">
 		<fieldset>
 			<legend>Formulário de Busca</legend>
 			
@@ -12,7 +12,9 @@
 				
 				<li>
 					<label for="model_id">Modelo:</label>
-					<select name="model_id" id="model_id" class="formHome" style="width:170px;"></select>
+					<select name="model_id" id="model_id" class="formHome" style="width:170px;">
+						<option value="0" selected="selected">Selecione...</option>
+					</select>
 				</li>
 				
 				<li>
@@ -81,10 +83,11 @@
         <li>
           <label for="city_id">Cidade:</label>
           <select name="city_id" class="formHome" id="city_id">
+			<option value="0" selected="selected">Selecione...</option>
           </select>
         </li>
       </ol>
-      <input name="buscar" type="submit" id="buscar" value="BUSCAR" class="button buttonSpecial" style="margin-left:60px;"/>
+	<input name="buscar" type="submit" id="buscar" value="BUSCAR" class="button buttonSpecial" style="margin-left:60px;"/>
     </fieldset>
   </form>
   <hr />

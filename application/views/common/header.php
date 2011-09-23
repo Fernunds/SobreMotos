@@ -31,8 +31,14 @@
 		
 		$.get('ajax/brands', function(data){$('#brand_id').html(data);});
 		$.get('ajax/states', function(data){$('#state_id').html(data);});
-		$("#brand_id").change(function(){$.get('ajax/models/' + this.value, function(data) {$('#model_id').html(data);});});
-		$("#state_id").change(function(){$.get('ajax/cities/' + this.value, function(data) {$('#city_id').html(data);});});
+		
+		$("#brand_id").change(function(){
+			$.get('ajax/models/' + this.value, function(data){$('#model_id').html(data);});
+		});
+		
+		$("#state_id").change(function(){
+			$.get('ajax/cities/' + this.value, function(data){$('#city_id').html(data);});
+		});
 		
 		//Carousel
 		$('.first-and-second-carousel').jcarousel();
@@ -91,5 +97,5 @@
 					Tudo sobre motos, encontros, competições, lançamentos, notícias. Confira!!
 				</a>
 			</div>
-		-->	
+		-->
 			

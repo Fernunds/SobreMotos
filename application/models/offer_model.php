@@ -139,4 +139,30 @@ class Offer_model extends CI_model{
 		
 		return $data;
 	}
+	
+	function search($filters){
+		$this->db->select($this->queryfields);
+		$this->db->from($this->tablename);
+		
+		for($i=0; $i<count($this->queryjoins); $i++){
+			$this->db->join($this->queryjoins[$i][0], $this->queryjoins[$i][1]);
+		}
+		
+		$this->db->where('offer.status_id', 1);
+		
+		foreach($filters as $filter){
+			$this->db->where($filter[0], $filter[1]);
+		}
+		
+		$query = $this->db->get();
+		$data  = array();
+		
+		if($query->num_rows() > 0){
+			foreach ($query->result() as $row){
+				array_push($data, $row);
+			}
+		}
+		
+		return $data;
+	}
 }
