@@ -41,11 +41,11 @@
 $route['default_controller'] = "home";
 $route['404_override'] = '';
 
-$route['entrar'] = 'users/login';
-$route['sair'] = 'users/logoff';
-$route['perfil/(:any)'] = 'users/profile/$1';
-
-$route['produto/(:any)'] = 'offers/details/$1';
+$route['entrar']			= 'users/login';
+$route['sair']				= 'users/logoff';
+$route['cadastro']			= 'users/register';
+$route['perfil/(:any)']		= 'users/profile/$1';
+$route['produto/(:any)']	= 'offers/details/$1';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

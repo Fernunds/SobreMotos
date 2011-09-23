@@ -16,7 +16,7 @@
   <br />
   <div class="offer_images"> <img src="<?=$root?>uploads/1.jpg" border="0"/> <img src="<?=$root?>uploads/2.jpg" border="0"/> <img src="<?=$root?>uploads/3.jpg" border="0"/> <img src="<?=$root?>uploads/1.jpg" border="0"/> <img src="<?=$root?>uploads/2.jpg" border="0"/> <img src="<?=$root?>uploads/3.jpg" border="0"/> </div>
   <div class="offer_data">
-    <h3>Vendedor</h3>
+    <h3>Dados do Vendedor</h3>
     <div id="offer_details">
       <ul>
         <li style="width:538px;"> <strong>Nome:</strong>&nbsp; <a href="<?=$root?>perfil/<?=$offers[0]->alias?>">
@@ -94,7 +94,7 @@
   </div>
   <br />
 
-<div id="user_telephone" class="dialog" title="Telefone do Vendedor">
+<div id="user_telephone" class="dialog" title="Telefone do Vendedor" style="display:none;">
 	<br />
 	<div>Contate o vendedor pelo telefone.</div>
 	

@@ -24,6 +24,8 @@ class Users extends CI_Controller {
 		} else {
 			if($this->user_model->login($_POST['email'], $_POST['password'])){
 				redirect('/');
+			} else {
+				redirect('/entrar');
 			}
 		}
 	}
@@ -32,6 +34,23 @@ class Users extends CI_Controller {
 	{
 		$this->user_model->logoff();
 		redirect('/');
+	}
+	
+	public function register(){
+		if(!$_POST){
+			$data['root']	= site_url();
+			$data['params'] = $this->parameter_model->all();
+			
+			$this->load->view('common/header', $data);
+			$this->load->view('users/register', $data);
+			$this->load->view('common/footer', $data);
+		} else {
+			if($this->user_model->login($_POST['email'], $_POST['password'])){
+				redirect('/');
+			} else {
+				redirect('/cadastro');
+			}
+		}
 	}
 	
 	public function profile($alias)
