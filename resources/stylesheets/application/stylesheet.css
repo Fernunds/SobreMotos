@@ -553,3 +553,11 @@ h4 {font-size: 18px; font-weight: normal;}
 	display:block;
 	margin:0 auto;
 }
+
+#col2 #breadcrumbs li{
+	font-size:9px;
+	padding:3px;
+	padding-left:20px;
+	margin:3px;
+	border:1px solid #ccc;
+}
