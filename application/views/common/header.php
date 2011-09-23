@@ -33,29 +33,12 @@
 		$.get('ajax/states', function(data){$('#state_id').html(data);});
 		$("#brand_id").change(function(){$.get('ajax/models/' + this.value, function(data) {$('#model_id').html(data);});});
 		$("#state_id").change(function(){$.get('ajax/cities/' + this.value, function(data) {$('#city_id').html(data);});});
-	});
-	
-	
-	jQuery(document).ready(function() {
-	// Inicializar o carrossel primeiro e segundo pelo seletor de classe.
-	// Note que eles usam tanto as mesmas opções de configuração (nenhuma no caso).
-	jQuery('.first-and-second-carousel').jcarousel();
-	// Se você quiser usar um caoursel com diferentes opções de configuração,
-	// Você tem que inicializar-lo separadamente.
-	// Fazemos isso por um seletor ID aqui.
-		jQuery('#first-carousel').jcarousel({
-        	visible: 3
-    	});
-		jQuery('#second-carousel').jcarousel({
-        	visible: 3
-    	});
-	
-	});
-	
-	jQuery(document).ready(function() {
-    	jQuery('#carousel-avatar').jcarousel({
-        	visible: 4
-    	});
+		
+		//Carousel
+		$('.first-and-second-carousel').jcarousel();
+		$('#first-carousel').jcarousel({visible: 3});
+		$('#second-carousel').jcarousel({visible: 3});
+		$('#carousel-avatar').jcarousel({visible: 4});
 	});
 </script>
     

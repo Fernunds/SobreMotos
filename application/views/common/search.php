@@ -1,6 +1,6 @@
 <div id="col1">	
 	<h3>Compre sua Moto</h3>
-	<form method="get" action="<?=$root?>listar">
+	<form method="get" action="<?=$root?>buscar">
 		<fieldset>
 			<legend>Formulário de Busca</legend>
 			

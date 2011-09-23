@@ -47,5 +47,7 @@ $route['cadastro']			= 'users/register';
 $route['perfil/(:any)']		= 'users/profile/$1';
 $route['produto/(:any)']	= 'offers/details/$1';
 
+$route['buscar/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)/'] = 'offers/search/$1/$2/$3/$4/$5/$6/$7/$8';
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
