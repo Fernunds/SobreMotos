@@ -77,6 +77,8 @@ h4 {font-size: 18px; font-weight: normal;}
 	border-color: #29447E #29447E #1A356E;
 }
 .btVenda {float: right;}
+.linkProduto{color:#666;}
+.precoProduto{color:#900;}
 
 /** COMEÇA HEADER ***/
 /** Formatação do bloco central **/
@@ -538,7 +540,7 @@ h4 {font-size: 18px; font-weight: normal;}
 }
 #linkMap {
 	/* background-color: #FF830B; */
-	height:120px;
+	height:46px;
 }
 #copyright {
 	/* background-color: #EE6308;

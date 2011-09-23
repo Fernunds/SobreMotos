@@ -5,7 +5,7 @@
       <ul id="first-carousel" class="first-and-second-carousel jcarousel-skin-tango">
         <?php foreach($offers as $offer){?>
         <li>
-          <div class="boxProduto"> <a href="<?=$root?>produto/<?=$offer->slug?>" title=""> <img src="uploads/1.jpg" alt="" width="150" height="121" />
+          <div class="boxProduto"> <a href="<?=$root?>produto/<?=$offer->slug?>" title="" class="linkProduto"> <img src="uploads/1.jpg" alt="" width="150" height="121" />
             <?=$offer->title?>
             <br />
             Ano:
@@ -17,7 +17,7 @@
             /
             <?=$offer->state?>
             <br />
-            </a> <span class="price">
+            </a> <span class="precoProduto">
             <?=price($offer->price)?>
             </span> </div>
         </li>
@@ -35,7 +35,7 @@
       <ul id="second-carousel" class="first-and-second-carousel jcarousel-skin-tango">
         <?php foreach($offers as $offer){?>
         <li>
-          <div class="boxProduto"> <a href="<?=$root?>produto/<?=$offer->slug?>" title=""> <img src="uploads/1.jpg" alt="" width="150" height="121" />
+          <div class="boxProduto"> <a href="<?=$root?>produto/<?=$offer->slug?>" title="" class="linkProduto"> <img src="uploads/1.jpg" alt="" width="150" height="121" />
             <?=$offer->title?>
             <br />
             Ano:
@@ -47,7 +47,7 @@
             /
             <?=$offer->state?>
             <br />
-            </a> <span class="price">
+            </a> <span class="precoProduto">
             <?=price($offer->price)?>
             </span> </div>
         </li>
