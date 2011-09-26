@@ -1,5 +1,4 @@
-function telephone()
-{
+function telephone(){
 	$('#user_telephone').dialog({
 		resizable: false,
 		width:500,

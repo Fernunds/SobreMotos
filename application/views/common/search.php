@@ -1,6 +1,11 @@
+<div class="validation_message" title="Mensagem do Sistema" style="display:none;">
+	<h3>Selecione uma Marca</h3>
+	<p>Para continuar sua busca é necessário selecionar ao menos uma marca!</p>
+</div>
+
 <div id="col1">	
 	<h3>Compre sua Moto</h3>
-	<form method="POST" action="<?=$root?>buscar">
+	<form method="POST" action="<?=$root?>buscar" id="search_form">
 		<fieldset>
 			<legend>Formulário de Busca</legend>
 			

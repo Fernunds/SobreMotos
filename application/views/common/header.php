@@ -11,12 +11,12 @@
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/jquery.js"></script>
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/jqueryui.js"></script>
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/galleria/galleria-1.2.4.js"></script>
-	<script type="text/javascript" src="<?=$root;?>resources/javascripts/funcoes.js"></script>
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/jquery.jcarousel.min.js"></script>
-	
+	<script type="text/javascript" src="<?=$root;?>resources/javascripts/funcoes.js"></script>
+
 	<script type="text/javascript">
 	$(function(){
-		Galleria.loadTheme('<?=$root;?>resources/javascripts/galleria/themes/classic/galleria.classic.min.js');
+		Galleria.loadTheme('<?=$root?>resources/javascripts/galleria/themes/classic/galleria.classic.min.js');
 
 		$('.offer_images').galleria({
 			transition:'fade',
@@ -29,35 +29,61 @@
 			showInfo:false
 		});
 		
-		$.get('ajax/brands', function(data){$('#brand_id').html(data);});
-		$.get('ajax/states', function(data){$('#state_id').html(data);});
-		
+		$.get('ajax/brands', function(data){
+			$('#brand_id').html(data);
+		});
+
+		$.get('ajax/states', function(data){
+			$('#state_id').html(data);
+		});
+
 		$("#brand_id").change(function(){
-			$.get('ajax/models/' + this.value, function(data){$('#model_id').html(data);});
+			$.get('ajax/models/' + this.value, function(data){
+				$('#model_id').html(data);
+			});
 		});
-		
+
 		$("#state_id").change(function(){
-			$.get('ajax/cities/' + this.value, function(data){$('#city_id').html(data);});
+			$.get('ajax/cities/' + this.value, function(data){
+				$('#city_id').html(data);
+			});
 		});
 		
+		$("#search_form").submit(function(){
+			if($("#brand_id").val() == 0){
+				$(".validation_message").dialog({
+					modal:true,
+					buttons: [{
+						text: 'Fechar',
+						click: function(){
+							$(this).dialog('close')
+						}
+					}]
+				});
+				
+				return false;
+			} else {
+				return true;
+			}
+		});
+
 		//Carousel
 		$('.first-and-second-carousel').jcarousel();
 		$('#first-carousel').jcarousel({visible: 3});
 		$('#second-carousel').jcarousel({visible: 3});
 		$('#carousel-avatar').jcarousel({visible: 4});
 	});
-</script>
-    
-<style type="text/css">
-/** Overwrite for having a carousel with dynamic width. **/
-.jcarousel-skin-tango .jcarousel-container-horizontal {
-    width: 580px;
-}
+	</script>
 
-.jcarousel-skin-tango .jcarousel-clip-horizontal {
-    width: 100%;
-}
-</style>    
+	<style type="text/css">
+	.jcarousel-skin-tango .jcarousel-container-horizontal {
+	    width: 580px;
+	}
+
+	.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	    width: 100%;
+	}
+	</style>    
 </head>
 <body>
 	<div id="site">
