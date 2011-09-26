@@ -5,7 +5,7 @@
 	<title><?=$params['system_title']?></title>
 	
 	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/stylesheets/application/stylesheet.css"/>
-	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/stylesheets/jqueryui/blitzer/jquery-ui-1.8.14.custom.css"/>
+	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/stylesheets/jqueryui/custom-theme/jquery-ui-1.8.16.custom.css"/>
 	<link rel="stylesheet" type="text/css" href="<?=$root;?>resources/javascripts/galleria/themes/classic/galleria.classic.css"/>
 	
 	<script type="text/javascript" src="<?=$root;?>resources/javascripts/jquery.js"></script>

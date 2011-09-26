@@ -99,7 +99,9 @@
   <hr />
   <br />
   <h3>Anuncie sua Moto</h3>
-  <p><a href="" title="Anunciar" class="button buttonConfirm">Anunciar</a></p>
+  <p><a href="/cadastro" title="Anunciar" class="button buttonConfirm">Anunciar</a></p>
+  <p>
+  </p>
   <br />
   <p><a href="" title="">Loja ou Concessionária</a></p>
   <br />
