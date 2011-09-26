@@ -29,6 +29,7 @@
     <br />
     <br />
     <br />
+    <hr />
     <h3>Detalhes do Produto</h3>
     <div id="offer_details">
       <ul>
@@ -80,6 +81,7 @@
     </div>
   </div>
   <div style="clear:both;"></div>
+  <hr />
   <h3>Descrição do Produto</h3>
   <div class="offer_description">
     <?=$offers[0]->description?>
