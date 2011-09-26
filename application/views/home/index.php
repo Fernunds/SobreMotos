@@ -6,7 +6,7 @@
         <?php foreach($offers as $offer){?>
         <li>
           <div class="boxProduto"> <a href="<?=$root?>produto/<?=$offer->slug?>" title="" class="linkProduto"> <img src="uploads/1.jpg" alt="" width="150" height="121" />
-            <?=$offer->title?>
+            <span class="tituloOferta"><?=$offer->title?></span>
             <br />
             Ano:
             <?=$offer->model_year?>
@@ -36,8 +36,9 @@
         <?php foreach($offers as $offer){?>
         <li>
           <div class="boxProduto"> <a href="<?=$root?>produto/<?=$offer->slug?>" title="" class="linkProduto"> <img src="uploads/1.jpg" alt="" width="150" height="121" />
-            <?=$offer->title?>
+            <span class="tituloOferta"><?=$offer->title?></span>
             <br />
+
             Ano:
             <?=$offer->model_year?>
             /
@@ -47,6 +48,7 @@
             /
             <?=$offer->state?>
             <br />
+      
             </a> <span class="precoProduto">
             <?=price($offer->price)?>
             </span> </div>

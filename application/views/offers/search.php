@@ -15,7 +15,7 @@
 		<div class="boxProduto">
 			<a href="<?=$root?>produto/<?=$offer->slug?>" title="" class="linkProduto">
 				<img src="uploads/1.jpg" alt="" width="150" height="121" />
-				<?=$offer->title?><br />
+				<span class="tituloOferta"><?=$offer->title?></span><br />
 				Ano: <?=$offer->model_year?> / <?=$offer->factory_year?><br />
 				<?=$offer->city?> / <?=$offer->state?><br />
 			</a>
