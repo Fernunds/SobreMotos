@@ -27,7 +27,7 @@
     </div>
   </div>
   <hr />
-
+  <div class="linha-separadora-trends"></div>
   <h3>Anúncios mais Buscados</h3>
   <div id="boxGrupo">
   
@@ -59,8 +59,7 @@
     </div>
   </div>
   <hr />
-
-  <br />
+  <div class="linha-separadora-trends"></div>
   <h3>Lojas ou Concessionárias</h3>
   <div id="boxGrupo">
   
