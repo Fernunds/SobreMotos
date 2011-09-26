@@ -15,10 +15,10 @@ class User_model extends CI_model{
 		if($this->session->userdata('logged')){
 			return true;
 		} else {
-			redirect('users/login');
+			redirect('/entrar');
 		}
 		
-		redirect('users/login');
+		redirect('/entrar');
 	}
 	
 	function login($email, $password)
@@ -34,10 +34,8 @@ class User_model extends CI_model{
 		if($query->num_rows > 0){
 			$result = $query->result();
 			
-			$this->session->set_userdata(array(
-				'logged'	=> true,
-				'user'		=> $result[0]
-			));
+			$this->session->set_userdata('logged',true);
+			$this->session->set_userdata($result[0]);
 			
 			return true;
 		} else {

@@ -45,11 +45,7 @@ class Users extends CI_Controller {
 			$this->load->view('users/register', $data);
 			$this->load->view('common/footer', $data);
 		} else {
-			if($this->user_model->login($_POST['email'], $_POST['password'])){
-				redirect('/');
-			} else {
-				redirect('/cadastro');
-			}
+			print('CADASTRO');
 		}
 	}
 	
