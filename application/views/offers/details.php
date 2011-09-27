@@ -19,13 +19,14 @@
     <h3>Dados do Vendedor</h3>
     <div id="offer_details">
       <ul>
-        <li style="width:94%;"> <strong>Nome:</strong> <a href="<?=$root?>perfil/<?=$offers[0]->alias?>">
+        <li> <strong>Nome:</strong> <a href="<?=$root?>perfil/<?=$offers[0]->alias?>">
           <?=$offers[0]->user_name?>
           </a> </li>
-        <li style="width:94%;"> <strong>Telefone:</strong> <a href="javascript:telephone('<?=$offers[0]->alias?>');" title="Ver Telefone">Ver Telefone</a> </li>
+        <li> <strong>Telefone:</strong> <a href="javascript:telephone('<?=$offers[0]->alias?>');" title="Ver Telefone">Ver Telefone</a> </li>
+        <li style="width:94%;"> <strong>Endereço:</strong> <a href="" title="Ver mapa de localização">Ver mapa de localização</a> </li>
       </ul>
     </div>
-    <hr />
+    <hr /><br /><br /><br /><br />
     <h3>Detalhes do Produto</h3>
     <div id="offer_details">
       <ul>
@@ -108,7 +109,7 @@
       <label class="" for="titulo">Título:</label>
       <input type="text" id="titulo" name="titulo" value="[WebDuasRodas] <?=$offers[0]->title?>"/>
       <br />
-      <textarea style="width:320px;" wrap="VIRTUAL" rows="5" name="texto"></textarea>
+      <textarea style="width:320px;" wrap="VIRTUAL" rows="5" name="texto">Olá, gostaria de comprar o sua motocicleta</textarea>
     <br />
 <input type="submit" value="Enviar" id="Enviar" class="button buttonConfirm">
 
