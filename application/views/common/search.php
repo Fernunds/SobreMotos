@@ -5,6 +5,7 @@
 
 <div id="col1">
   <h3>Compre sua Moto</h3>
+  <div id="buscaProduto">
   <form method="POST" action="<?=$root?>buscar" id="search_form">
     <fieldset>
       <legend>Formulário de Busca</legend>
@@ -94,6 +95,7 @@
       <input name="buscar" type="submit" id="buscar" value="BUSCAR" class="button buttonSpecial" style="margin-left:60px;"/>
     </fieldset>
   </form>
+  </div>
   <hr />
   <br />
   <h3>Anuncie sua Moto</h3>

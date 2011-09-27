@@ -19,24 +19,20 @@
     <h3>Dados do Vendedor</h3>
     <div id="offer_details">
       <ul>
-        <li style="width:538px;"> <strong>Nome:</strong> <a href="<?=$root?>perfil/<?=$offers[0]->alias?>">
+        <li style="width:94%;"> <strong>Nome:</strong> <a href="<?=$root?>perfil/<?=$offers[0]->alias?>">
           <?=$offers[0]->user_name?>
           </a> </li>
-        <li style="width:538px;"> <strong>Telefone:</strong> <a href="javascript:telephone('<?=$offers[0]->alias?>');" title="Ver Telefone">Ver Telefone</a> </li>
+        <li style="width:94%;"> <strong>Telefone:</strong> <a href="javascript:telephone('<?=$offers[0]->alias?>');" title="Ver Telefone">Ver Telefone</a> </li>
       </ul>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
     <hr />
     <h3>Detalhes do Produto</h3>
     <div id="offer_details">
       <ul>
-        <li style="width:538px;"><strong>Marca:</strong>
+        <li style="width:94%;"><strong>Marca:</strong>
           <?=$offers[0]->brand;?>
         </li>
-        <li style="width:538px;"><strong>Modelo:</strong>
+        <li style="width:94%;"><strong>Modelo:</strong>
           <?=$offers[0]->model;?>
         </li>
         <li><strong>Combustível:</strong>
@@ -82,13 +78,21 @@
   </div>
   <div style="clear:both;"></div>
   <hr />
-  <h3>Descrição do Produto</h3>
+  <h4>Descrição do Produto</h4>
   <div class="offer_description">
     <?=$offers[0]->description?>
   </div>
   <br />
   <hr />
+  <h4>Considerações sobre o Produto</h4>
+  <div class="offer_consideration">
+    <?=$offers[0]->consideration?>
+  </div>
+  <br />
+  <hr />
   <h3>Enviar Proposta</h3>
+
+  <div id="boxGrupo">
   <fildeset>
     <form>
       <label class="" for="nome">Nome:</label>
@@ -110,14 +114,10 @@
 
     </form>
   </fildeset>
-  <br />
-  <hr />
-  <h3>Considerações sobre o Produto</h3>
-  <div class="offer_consideration">
-    <?=$offers[0]->consideration?>
   </div>
-  <br />
+  <br /><p>&nbsp;</p><br />
   <hr />
+
   <ul class="termosProduto">
     <li>• A WebDuasRodas não se responsabiliza por qualquer dano e/ou prejuízo que o usuário possa sofrer ao realizar uma negociação com outros usuários deste web site.</li>
     <li>• Cabe ao usuário certificar-se da idoneidade do anunciante e da existência e estado de conservação do veículo que pretende comprar. O usuário concorda que as eventuais negociações que vier a fazer com outros usuários deste web site serão por sua conta e risco. As vendas e entregas dos veículos anunciados a terceiros, usuários deste web site, são de inteira responsabilidade do anunciante.</li>
